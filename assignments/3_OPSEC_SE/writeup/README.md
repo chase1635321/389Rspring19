@@ -16,8 +16,16 @@ The easiest method, would be to call her, posing as a representative from her ba
 
 ## Part 2
 
-A first vulnerability is the weak password on the port. This password should be changed to something greater than 8 characters that is not found in a well known wordlist.
+A first vulnerability is the weak password on the port. This password should be changed to something greater than 8 characters that is not found in a well known wordlist.n [3]
 
-A second vulnerability is that the port itself is unfiltered. Access could easily be restricted to a specific ip range, or ssh with rsa keys could be used, or port knocking could be employed.
+A second vulnerability is that the port itself is unfiltered. Access could easily be restricted to a specific ip range, or ssh with rsa keys could be used, or port knocking could be employed. [2]
 
-A third vulnerability is that communication with this server is unencrypted. An attacker on the same local network as Elizabeth or the server could intercept a login attempt with a MITM attack and read the plaintext password.
+A third vulnerability is that communication with this server is unencrypted. An attacker on the same local network as Elizabeth or the server could intercept a login attempt with a MITM attack [1] and read the plaintext password.
+
+
+1. G. Nath Nayak and S. Ghosh Samaddar, "Different flavours of Man-In-The-Middle attack, consequences and feasible solutions," 2010 3rd International Conference on Computer Science and Information Technology, Chengdu, 2010, pp. 491-495.
+
+2. http://www.senki.org/exploitable-port-filtering/
+
+
+3. http://legacydirs.umiacs.umd.edu/~mmazurek/soups16tutorial.pdf
