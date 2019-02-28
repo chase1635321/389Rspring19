@@ -75,7 +75,7 @@ CMSC389R-{h1dd3n_1n_plain_5ight} (Main site source)
 
 6. What ports are open on the website? What services are running behind these ports? How did you discover this?
 
-7. Which operating system is running on the website? How did you discover this?
+7. Which operating system is running on the server that is hosting the website? How did you discover this?
 
 8. **BONUS:** Did you find any other flags on your OSINT mission? (Up to 9 pts!)
 
