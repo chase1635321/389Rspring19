@@ -1,0 +1,8 @@
+Pulling:
+git fetch upstream (for git pull)
+git merge upstream/master -m "pull new assignment"
+
+Pushing:
+git add .
+git commit -m "completed assignment 1"
+git push
