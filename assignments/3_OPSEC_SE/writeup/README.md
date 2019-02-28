@@ -16,9 +16,9 @@ The easiest method, would be to call her, posing as a representative from her ba
 
 ## Part 2
 
-A first vulnerability is the weak password on the port. This password should be changed to something greater than 8 characters, with numbers and symbols beyond l33t speak, that is not found in a well known wordlist.n [3]
+A first vulnerability is the weak password on the port. This password should be changed to something greater than 8 characters, with numbers and symbols beyond l33t speak, that is not found in a well known wordlist. [3]
 
-A second vulnerability is that the port itself is unfiltered. Access could easily be restricted to a specific ip range, or ssh with rsa keys could be used, or port knocking could be employed. [2]
+A second vulnerability is that the port itself is unfiltered. Access could easily be restricted to a specific ip range, or ssh with RSA keys could be used, or port knocking could be employed. [2]
 
 A third vulnerability is that communication with this server is unencrypted. An attacker on the same local network as Elizabeth or the server could intercept a login attempt with a MITM attack [1] and read the plaintext password.
 
