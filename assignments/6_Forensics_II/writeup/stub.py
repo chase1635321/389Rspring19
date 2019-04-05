@@ -43,22 +43,18 @@ for i in range(section):
     elif s == 2:
         print("UTF-8: " + str(val))
     elif s == 3:
-        (message,) = unpack("<{}s".format(l/4), data[o:o + l/4])
-        print("Words: " + str(message))
+        print("Words: " + str(unpack("<{}s".format(l/4), data[o:o + l/4])))
     elif s == 4:
         for i in range(0, l, 8):
-            (message, ) = unpack("<8s", data[o+i, o+i+9])
-            print("Dwords: " + str(message))
+            print("Dwords: " + str(unpack("<8s", data[o+i, o+i+9])))
     elif s == 5:
          for i in range(0, l, 8):
-            (message, ) = unpack("<8s", data[o+i, o+i+8])
-            print("Doubles: " + str(message))
+            print("Doubles: " + str(unpack("<8s", data[o+i, o+i+8])))
     elif s == 6:
         (lat, lon) = unpack("<dd", data[o:o+l])
         print("Coor: " + str(lat) + ", " + str(lon))
     elif s == 7:
-        (message,) = unpack("<d", data[o:o+l])
-        print("Ref: " + str(message))
+        print("Ref: " + str(unpack("<d", data[o:o+l])))
     elif s == 8 or s == 9 or s == 10:
         header = b"\x89\x50\x4E\x47\x0d\x0a\x1a\x0a"
         with open(str("file" + str(s) + ".output"), "wb") as f:
