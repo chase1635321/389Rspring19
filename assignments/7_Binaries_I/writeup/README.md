@@ -1,12 +1,12 @@
 # Writeup 7 - Binaries I
 
-Name: *PUT YOUR NAME HERE*
-Section: *PUT YOUR SECTION NUMBER HERE*
+Name: Chase Kanipe
+Section: 0102
 
 I pledge on my honor that I have not given or received any unauthorized
 assistance on this assignment or examination.
 
-Digital acknowledgement: *PUT YOUR NAME HERE*
+Digital acknowledgement: Chase Kanipe
 
 ## Assignment Writeup
 
@@ -14,9 +14,25 @@ Digital acknowledgement: *PUT YOUR NAME HERE*
 
 *Put your code here as well as in main.c*
 ```c
-printf("your code here");
+#include<stdio.h>
+#include<stdlib.h>
+
+int main(int argc,char *argv[]){
+	int x8 = 0x1ceb00da;
+	int x4 = 0xfeedface;
+
+	printf("%d\n", x4);
+	printf("%d\n", x8);
+
+	x4 ^= x8;
+	x8 ^= x4;
+	x4 ^= x8;
+
+	printf("%d\n", x4);
+	printf("%d\n", x8);
+}
 ```
 
 ### Part 2 (10 Pts)
 
-*Replace this text with your repsonse to our prompt for part 2!*
+This code starts with two hex values as local variables. It then prints both of there values, xors the second with the first, then xors the result with the second, then xors the result with the first. These values are then printed.
